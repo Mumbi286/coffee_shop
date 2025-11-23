@@ -12,4 +12,7 @@ The project follows a real-world situations:
 # Installation
 1. clone the repository 
  git cloned:
- pipe
+ pipenv install
+ pipenv shell 
+ pipenv install pytest
+ 
