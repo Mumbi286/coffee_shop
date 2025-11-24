@@ -15,5 +15,10 @@ class Order:
         # Calculates total price of the order
         def total_price(self):
             return sum(item.price for item in self.coffee_items)
+
+        def __str__(self):
+            #
+            items_str = ', '.join(str(item) for item in self.coffee_items)
+            return f"Order(customer={self.customer}, coffee_items=[{items_str}])"
         
     pass
